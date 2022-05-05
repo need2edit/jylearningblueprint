@@ -136,12 +136,25 @@ A small progress bar may appear on multiple elements showing the overall viewing
 - A scrubber to navigate.
 - A channel logo with a title.
 
-## Use Cases for UIKit
+
+## Planning the Build
+
+How would we go about building this? Do we use UIKit? Do we use SwiftUI? Both?
+
+### Use Cases for UIKit
 
 This app has a lot of grids. Some scrolling horizontally, others vertically. It is a strong use case for UICollectionView and UICollectionViewCompositionalLayout.
 
-## Use Cases for SwiftUI
+### Use Cases for SwiftUI
 
 This app has a lot of grids. It is a strong use case for using ScrollViews with LazyVGrids and LazyHGrids. There is also a lot of appearance customization that SwiftUI might be better at than UIKit.
+
+### Data Storage
+
+The app loads JSON from a server to show its content. Storing data locally could occur with a variety of technologies:
+
+- User Defaults
+- Core Data
+- Realm or some other third party library.
 
 
